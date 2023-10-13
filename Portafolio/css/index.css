@@ -1,0 +1,127 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Header */
+
+.Titulo{
+    font-family: 'Cinzel', serif;
+    font-size: 2.5em;
+    color: #1E823E;
+    font-weight: bold;
+    text-shadow: 3px 2px 4px #1E211F;
+}
+
+header{
+    width: 100%;
+    height: 50vh;
+    background-color: #C5FCD7;
+    overflow: auto;
+}
+
+nav{
+    width: 90%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav a{
+    color: blue;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: red;
+}
+
+.Cajota{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cajita{
+    text-align: center;
+}
+
+.Boton{
+    text-decoration: none;
+    background-color: #1E823E;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.Boton:hover{
+    color: black;
+    opacity: .5;
+}
+
+h1{
+    font-size: 6em;
+    letter-spacing: 10px;
+    word-spacing: 30px;
+}
+
+.Parrafo{
+    padding: 15px;
+    margin: 10px;
+}
+
+/* Comienza seccion a cerca */
+
+#Acerca{
+    width: 100%;
+    height: 50vh;
+}
+
+.Subtitulo{
+    width: 70%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contenedor1{
+    width: 90%;
+    height: 40vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Contenedor2{
+    width: 45%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+h2{
+    font-size: 3em;
+
+}
+
+.Contenedor2 img{
+    width: 50%;
+}
