@@ -1,0 +1,372 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Header */
+
+.Titulo{
+    font-family: 'Cinzel', serif;
+    font-size: 2.5em;
+    color: #1E823E;
+    font-weight: bold;
+    text-shadow: 3px 2px 4px #1E211F;
+}
+
+header{
+    width: 100%;
+    height: 50vh;
+    background-color: #C5FCD7;
+    overflow: auto;
+}
+
+nav{
+    width: 90%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav a{
+    color: blue;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: red;
+}
+
+.Cajota{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cajita{
+    text-align: center;
+}
+
+.Boton{
+    text-decoration: none;
+    background-color: #1E823E;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.Boton:hover{
+    color: black;
+    opacity: .5;
+}
+
+h1{
+    font-size: 6em;
+    letter-spacing: 10px;
+    word-spacing: 30px;
+}
+
+.Parrafo{
+    padding: 15px;
+    margin: 10px;
+}
+
+/* Comienza seccion a cerca */
+
+#Acerca{
+    width: 100%;
+    height: 50vh;
+}
+
+.Subtitulo{
+    width: 70%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contenedor1{
+    width: 90%;
+    height: 40vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Contenedor2{
+    width: 45%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+h2{
+    font-size: 3em;
+
+}
+
+.Contenedor2 img{
+    width: 40%;
+}
+
+/* Comienza seccion saberes */
+
+#Saberes{
+    width: 100%;
+    height: 70vh;
+    background: url(../imagenes/Fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.Contenedor_Saberes{
+    width: 90%;
+    height: 60vh;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Saber{
+    width: 25%;
+    height: 55vh;
+    background: rgba(187, 200, 195, 0.48);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(18.9px);
+    -webkit-backdrop-filter: blur(18.9px);
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+
+}
+
+
+.Saber:hover{
+    transform: translatex(20px);
+    -webkit-transform: translatex(20px);
+    -moz-transform: translatex(20px);
+
+}
+
+.Saber img{
+    width: 100%;
+    height: 20vh;
+}
+
+.Saber h3{
+    text-align: center;
+    font-size: 3em;
+}
+
+.Saber p{
+    text-align: justify;
+    margin: 10px;
+}
+
+.Subtitulo h2{
+    text-shadow: 0 0 2px white;
+}
+
+/* Logo de whats */
+
+.w{
+    position: fixed;
+    bottom: 1px;
+    right: 1px;
+}
+
+#Contacto{
+    width: 100%;
+    height: 60vh;
+}
+
+.Contenedor_Contacto{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Contacto{
+    width: 50%;
+    height: 50vh;
+    box-shadow: 0 0 3px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Aviso{
+    display: none;
+}
+
+.input{
+    border: none;
+    border-bottom: solid 1px black;
+}
+
+.Formulario{
+    font-size: 1.5em;
+}
+
+.check:hover ~ .Aviso{
+    display: block;
+    position: absolute;
+    background: linear-gradient(rgba(55, 110, 89, 0.48), rgba(131, 252, 205, 0.48));
+}
+
+/* Pie de pagina */
+
+footer{
+    width: 100%;
+    height: 30vh;
+    background-color: #c6f3d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img{
+    margin-right: 2em;
+}
+
+.hamburguesa{
+    display: none;
+}
+
+
+/* COMIENZA EL MODELO RESPONSIVO */
+
+@media(max-width:900px){
+    nav ul{
+        display: none;
+    }
+    .hamburguesa{
+        display: block;
+    }
+    header{
+        height: 70vh;
+        text-align: center;
+    }
+    #Acerca{
+        height: 60vh;
+    }
+    .Contenedor1{
+        flex-direction: column;
+        
+    }
+    .Contenedor2{
+        width: 70vh;
+       
+    }
+    #Saberes{
+        height: 190vh;
+    }
+    .Contenedor_Saberes{
+        height: 180vh;
+        flex-direction: column;
+    }
+    .Saber{
+        width: 90%;
+        height: 40vh;
+        margin: auto;
+    }
+
+    .formulario img{
+        display: none;
+    }
+
+    
+    .Contenedor_Contacto{
+        flex-direction: column;
+    }
+    .Contacto{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+/* Seccion de Diseño Web */
+
+/* Para hacer un carrusel de imagenes */
+
+.portafolio{
+    width: 100%;
+    height: 100vh;
+}
+
+.contenedor-imagenes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+.imagenes{
+    display: flex;
+    width: 60%;
+    height: 60vh;
+    border: solid 5px black;
+}
+
+.contenedor-imagenes img{
+    /* Para encimar imagenes */
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.contenedor-imagenes img:hover{
+    /* Efecto de abarcar el contenedor para toda la pantalla */
+    cursor: crosshair;
+    width: 40%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+/* Pseudo Elementos */
+
+/* Tamaño de la barra de navegacion */
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: rgb(157, 219, 141);
+  }
+
+  /* Tamaño de la barra de navegacion que ocupa la pagina web */
+  ::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: rgb(127, 185, 134);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+  }
+
+  ::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: linear-gradient(rgba(172, 223, 197, 0.877),rgba(255, 0, 0, 0.459))
+
+}
